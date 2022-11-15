@@ -12,6 +12,8 @@
 - Heroku (PaaS and Cloud Deployment)
 - Sendgrid API
 
+*(Note: For HTML and CSS resources, I plan to look towards the [Bootstrap Documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/) and W3Schools for both [HTML](https://www.w3schools.com/html/default.asp) and [CSS](https://www.w3schools.com/bootstrap5/index.php))*
+
 Since guac-n-roll.net is already taken by my WordPress blog from the first assignment in the semester, I plan to use guac-n-roll.xyz or another related domain (since that has not been purchased yet).
 
 **In this application, I am anticipating that user's will be able to:**
