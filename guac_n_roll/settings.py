@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # 3rd Party
+    "crispy_forms", # new
+    "crispy_bootstrap5", # new
+    # Local
     "accounts.apps.AccountsConfig", # new
+    "pages.apps.PagesConfig", # new
+    "articles.apps.ArticlesConfig", # new
 ]
 
 MIDDLEWARE = [
@@ -101,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "US/Central" # new, originally UTC
 
 USE_I18N = True
 
@@ -122,3 +128,15 @@ AUTH_USER_MODEL = "accounts.CustomUser" # new
 
 LOGIN_REDIRECT_URL = "home" # new
 LOGOUT_REDIRECT_URL = "home" # new
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5" # new
+CRISPY_TEMPLATE_PACK = "bootstrap5" # new
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend" # SENDGRID API FOR PASSWORD RESETS BABYYYYYY
+
+DEFAULT_FROM_EMAIL = "raherndon1@buffs.wtamu.edu"
+EMAIL_HOST = "smtp.sendgrid.net"
+EMAIL_HOST_USER = "apikey"
+EMAIL_HOST_PASSWORD = key.EMAIL_KEY
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
