@@ -6,9 +6,11 @@
 {% for article in article_list %}
 <div class="card">
     <div class="card-header">
-        <span class="font-weight-bold">{{ article.title }}</span> &middot;
-        <span class="text-muted">by {{ article.author }} |
-            {{ article.date }}</span>
+        <a href="{% url 'article_detail' article.pk %}">
+            <span class="font-weight-bold">{{ article.title }}</span>
+        </a>
+        &middot;
+        <span class="text-muted">by {{ article.author }} | {{ article.date }}</span>
     </div>
     <div class="card-body">
         <p>{{ article.body }}</p>
