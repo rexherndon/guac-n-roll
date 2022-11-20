@@ -32,6 +32,3 @@ Guac-N-Roll is a homage to other music review blogs, such as [Rolling Stone](htt
 
 ---
 
-Notes (Just for me, please disregard):
-
-Rework your way through Vincent's chapter 8-16 and build something similar to his newspaper app. It should have all of the functionality you'll need.
