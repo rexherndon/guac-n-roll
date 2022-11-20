@@ -85,6 +85,7 @@ class ArticleUpdateView(
     fields = (
         "title",
         "body",
+        "image_url"
     )
     template_name = "article_edit.html"
 
@@ -105,7 +106,7 @@ class ArticleDeleteView(
 class ArticleCreateView(LoginRequiredMixin, CreateView): 
     model = Article
     template_name = "article_new.html"
-    fields = ("title", "body")
+    fields = ("title", "body", "image_url")
 
     def form_valid(self, form): 
         form.instance.author = self.request.user

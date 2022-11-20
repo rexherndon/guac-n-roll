@@ -13,13 +13,13 @@
             <header class="p-3 mb-3 border-bottom">
                 <div class="container">
                     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                        <a class="navbar-brand text-light" href="{% url 'home' %}">Guac-N-Roll</a>
+                        <a class="navbar-brand text-warning" href="{% url 'home' %}">Guac N' Roll</a>
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         {% if user.is_authenticated %}
-                            <li><a href="{% url 'article_new' %}" class="nav-link px-2 link-info">+ New</a></li>
+                            <li><a href="{% url 'article_new' %}" class="text-warning nav-link px-2 link-info">+ New</a></li>
                         </ul>
                         <div class="dropdown text-end">
-                            <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" class="d-block link-warning text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                             {{ user.username }}
                             </a>
                             <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
@@ -30,8 +30,8 @@
                         {% else %}
                         </ul>
                         <div class="text-end">
-                            <a href="{% url 'login' %}" class="btn btn-outline-primary me-2"> Log In</a>
-                            <a href="{% url 'signup' %}" class="btn btn-primary">Sign Up</a>
+                            <a href="{% url 'login' %}" class="text-dark btn btn-warning me-2"> Log In</a>
+                            <a href="{% url 'signup' %}" class="text-dark btn btn-warning ml-2">Sign Up</a>
                         </div>
                         {% endif %}
                     </div>
