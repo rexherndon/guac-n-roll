@@ -6,3 +6,6 @@ __pycache__/
 config.py
 **/key.py
 .venv/*
+.env
+db.sqlite3
+.DS_Store
