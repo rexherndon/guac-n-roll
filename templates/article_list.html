@@ -14,21 +14,21 @@
 {% for article in article_list %}
 <div class="col-sm-6">
 
-    <div class="card text-black bg-warning">
+    <div class="card text-light bg-success">
 
         <div class="card-header">
-            <a class="link-dark" href="{% url 'article_detail' article.pk %}">
+            <a class="link-light" href="{% url 'article_detail' article.pk %}">
                 <span class="font-weight-bold"><b>{{ article.title }}</b></span>
             </a>
             &middot;
-            <span class="text-dark">by {{ article.author }} | {{ article.date }}</span>
+            <span class="text-light">by {{ article.author }} | {{ article.date }}</span>
         </div>
 
         <div class="card-body">
             <p class="text-truncate">{{ article.body }}</p>
         </div>
 
-        <div class="card-footer">
+        <div class="card-footer text-dark">
             {% for comment in article.comment_set.all %}
             <p>
                 <span class="font-weight-bold">
