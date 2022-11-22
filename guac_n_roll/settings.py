@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-from . import key
 from environs import Env # new
 
 env = Env() 
@@ -147,6 +146,6 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend" # SENDGRID API FOR
 DEFAULT_FROM_EMAIL = "raherndon1@buffs.wtamu.edu"
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = "apikey"
-EMAIL_HOST_PASSWORD = key.EMAIL_KEY
+EMAIL_HOST_PASSWORD = env.str("EMAIL_KEY")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
