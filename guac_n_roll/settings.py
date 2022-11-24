@@ -143,7 +143,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap5" # new
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend" # SENDGRID API FOR PASSWORD RESETS BABYYYYYY
 
-DEFAULT_FROM_EMAIL = "raherndon1@buffs.wtamu.edu"
+DEFAULT_FROM_EMAIL = "rherndon.test@gmail.com"
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = "apikey"
 EMAIL_HOST_PASSWORD = env.str("EMAIL_KEY")
